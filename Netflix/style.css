@@ -1,0 +1,96 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.logo{
+    border: 1px solid transparent;
+}
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 18px;
+    font-size: 22px;
+}
+header nav a:hover{
+    color: #FFF;
+}
+
+/*filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('img/Sherlock_capa.jpg');
+    
+    height: 500px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme-principal .sinopse{
+    margin-bottom: 45px;
+    margin-top: 10px;
+}
+
+.sherlock{
+    margin-top: 15%;
+    font-size: 50px;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 0.50);
+    border: none;
+    color: white;
+    padding: 15px 28px;
+    margin-right: 15px;
+    font-size: 13px ;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: #141414;
+}
+.botao i{
+    margin-right: 7px;
+}
+.container{
+    margin-left: 37px;
+}
+.filme-principal .container {
+    width: 60%;
+}
+
+.carrosel-filmes{
+    margin-top: 22px;
+}
+.sinopse{
+    width: 560px;
+}
